@@ -3,13 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>To-Do-List</title>
+    <link rel="stylesheet" href="To-Do-List.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
 </head>
-<body>
+<body class="body">
     <div class="menu">
         <div class="menu__inner">
             <div class="menu-header">
-                <div class="menu-header__title">Menu</div>
+                <div class="menu-header__title title font-size-l font-weight-xl">Menu</div>
                 <div class="menu-header__button">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M21 10H3" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
@@ -20,7 +28,7 @@
                 </div>
             </div>
             <form class="search">
-                <button class="search__button">
+                <button class="search__button button">
                     <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g clip-path="url(#clip0_1_12)">
                       <path d="M6.875 11.875C9.63642 11.875 11.875 9.63642 11.875 6.875C11.875 4.11358 9.63642 1.875 6.875 1.875C4.11358 1.875 1.875 4.11358 1.875 6.875C1.875 9.63642 4.11358 11.875 6.875 11.875Z" stroke="black" stroke-opacity="0.7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
@@ -32,22 +40,22 @@
                       </clipPath>
                     </defs>
                   </svg></button>
-                <input type="text" class="search__input" placeholder = "Search...">
+                <input type="text" class="search__input input button" placeholder = "Search...">
             </form>
             <div class="checklist tasks">
-                <h1 class="checklist__title">Tasks</h1>
+                <h1 class="checklist__title title font-size-s font-weight-xl">Tasks</h1>
                 <ul class="checklist__ul">
                     <li class="checklist__li">
-                        <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <svg class="checklist__svg" width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M8.125 10.625L11.25 7.5L8.125 4.375" stroke="black" stroke-opacity="0.7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                             <path d="M3.75 10.625L6.875 7.5L3.75 4.375" stroke="black" stroke-opacity="0.7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                           </svg>
-                        <span class="checklist__span">Upcoming</span>
-                        <div class="checklist__counter">+15</div>
+                        <span class="checklist__span text">Upcoming</span>
+                        <div class="checklist__counter text">+15</div>
 
                     </li>
                     <li class="checklist__li">
-                        <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <svg class="checklist__svg" width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M5 3.75H13.125" stroke="black" stroke-opacity="0.7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                             <path d="M5 7.5H13.125" stroke="black" stroke-opacity="0.7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                             <path d="M5 11.25H13.125" stroke="black" stroke-opacity="0.7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
@@ -55,11 +63,11 @@
                             <path d="M1.875 7.5H1.88125" stroke="black" stroke-opacity="0.7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                             <path d="M1.875 11.25H1.88125" stroke="black" stroke-opacity="0.7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                           </svg>
-                          <span class="checklist__span">Today</span>
-                          <div class="checklist__counter">8</div>
+                          <span class="checklist__span text">Today</span>
+                          <div class="checklist__counter text">8</div>
                     </li>
                     <li class="checklist__li">
-                        <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <svg class="checklist__svg" width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <g clip-path="url(#clip0_1_45)">
                               <path d="M11.875 2.5H3.125C2.43464 2.5 1.875 3.05964 1.875 3.75V12.5C1.875 13.1904 2.43464 13.75 3.125 13.75H11.875C12.5654 13.75 13.125 13.1904 13.125 12.5V3.75C13.125 3.05964 12.5654 2.5 11.875 2.5Z" stroke="black" stroke-opacity="0.7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                               <path d="M10 1.25V3.75" stroke="black" stroke-opacity="0.7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
@@ -72,42 +80,46 @@
                               </clipPath>
                             </defs>
                           </svg>
-                          <span class="checklist__span">Calendar</span>
+                          <span class="checklist__span text">Calendar</span>
                           <div class="checklist__counter"></div>
 
                     </li>
                     <li class="checklist__li">
-                        <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <svg class="checklist__svg" width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M10.4464 9.64286H15V0.803571C15 0.358259 14.6417 0 14.1964 0H0.803571C0.358259 0 0 0.358259 0 0.803571V14.1964C0 14.6417 0.358259 15 0.803571 15H9.64286V10.4464C9.64286 10.0045 10.0045 9.64286 10.4464 9.64286ZM14.7656 11.4844L11.4844 14.7656C11.3337 14.9163 11.1295 15 10.9152 15H10.7143V10.7143H15V10.9185C15 11.1295 14.9163 11.3337 14.7656 11.4844Z" fill="black" fill-opacity="0.7" />
                           </svg>
-                          <span class="checklist__span">Sticky Wall</span>
+                          <span class="checklist__span text">Sticky Wall</span>
                           <div class="checklist__counter"></div>
 
                     </li>
                 </ul>
             </div>
             <div class="checklist lists">
-                <h1 class="checklist__title">Lists</h1>
+                <h1 class="checklist__title title font-size-s font-weight-xl">Lists</h1>
                 <ul class="checklist__ul">
-                    <li class="checklist__li">
-                        <div class="checkout__color-list"></div>
-                        <span class="checklist__span">Work</span>
+                    <li class="checklist__li checklist__li_bg_grey">
+                        <div class="checkout__color-list color-red"></div>
+                        <span class="checklist__span text">Work</span>
                     </li>
-                    <li class="checklist__li">
-                        <div class="checkout__color-list"></div>
-                        <span class="checklist__span">Personal</span>
+                    <li class="checklist__li checklist__li_bg_grey">
+                        <div class="checkout__color-list color-green"></div>
+                        <span class="checklist__span text">Personal</span>
                     </li>
-                    <li class="checklist__li">
-                        <div class="checkout__color-list"></div>
-                        <span class="checklist__span">Study</span>
+                    <li class="checklist__li checklist__li_bg_grey">
+                        <div class="checkout__color-list color-blue"></div>
+                        <span class="checklist__span text">Study</span>
                     </li>
-                    <li class="checklist__li">
-                        <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M7.5 13.75C10.9518 13.75 13.75 10.9518 13.75 7.5C13.75 4.04822 10.9518 1.25 7.5 1.25C4.04822 1.25 1.25 4.04822 1.25 7.5C1.25 10.9518 4.04822 13.75 7.5 13.75Z" stroke="black" stroke-opacity="0.4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                            <path d="M7.5 5V10" stroke="black" stroke-opacity="0.4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                            <path d="M5 7.5H10" stroke="black" stroke-opacity="0.4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    <li>
+                      <form action="" class="checklist__form">
+                        <button class="checklist__button button">
+                          <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M7.5 13.75C10.9518 13.75 13.75 10.9518 13.75 7.5C13.75 4.04822 10.9518 1.25 7.5 1.25C4.04822 1.25 1.25 4.04822 1.25 7.5C1.25 10.9518 4.04822 13.75 7.5 13.75Z" stroke="black" stroke-opacity="0.4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                              <path d="M7.5 5V10" stroke="black" stroke-opacity="0.4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                              <path d="M5 7.5H10" stroke="black" stroke-opacity="0.4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                           </svg>
-                        <span class="checklist__span">Add new list</span>
+                        </button>
+                        <input type="text" class="checklist__input input button" placeholder="Add new list">
+                      </form>
                     </li>
                 </ul>
 
@@ -116,14 +128,14 @@
     </div>
     <div class="page-title">
         <div class="page-title__inner">
-            <h1 class="page-title__title">Upcoming</h1>
-            <div class="page-title__counter">18</div>
+            <h1 class="page-title__title title font-size-xl">Upcoming</h1>
+            <div class="page-title__counter title">18</div>
         </div>
     </div>
-    <div class="block">
-        <h1 class="block__title">Today</h1>
+    <div class="block block-up">
+        <h1 class="block__title title font-size-xl">Today</h1>
         <form action="" class="block__form">
-            <button class="block__button">
+            <button class="block__button button">
                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g clip-path="url(#clip0_1_64)">
                   <path d="M10 18.3333C14.6024 18.3333 18.3333 14.6024 18.3333 9.99999C18.3333 5.39762 14.6024 1.66666 10 1.66666C5.39763 1.66666 1.66667 5.39762 1.66667 9.99999C1.66667 14.6024 5.39763 18.3333 10 18.3333Z" stroke="black" stroke-opacity="0.7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
@@ -137,27 +149,27 @@
                 </defs>
               </svg>
             </button>
-            <input type="text" class="block__input" placeholder="Add new task">
+            <input type="text" class="block__input input button" placeholder="Add new task">
         </form>
         <ul class="block__ul">
             <li class="block__li">
                 <input type="checkbox" class="block__checkbox">
-                <span class="block__span">Database create for company </span>
+                <span class="block__span text">Database create for company </span>
             </li>
             <li class="block__li">
                 <input type="checkbox" class="block__checkbox">
-                <span class="block__span">Website templates</span>
+                <span class="block__span text">Website templates</span>
             </li>
             <li class="block__li">
                 <input type="checkbox" class="block__checkbox">
-                <span class="block__span">Meet work teem</span>
+                <span class="block__span text">Meet work teem</span>
             </li>
         </ul>
     </div>
-    <div class="block">
-        <h1 class="block__title">Tomorrow</h1>
+    <div class="block block-down">
+        <h1 class="block__title title font-size-xl">Tomorrow</h1>
         <form action="" class="block__form">
-            <button class="block__button">
+            <button class="block__button button">
                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g clip-path="url(#clip0_1_64)">
                   <path d="M10 18.3333C14.6024 18.3333 18.3333 14.6024 18.3333 9.99999C18.3333 5.39762 14.6024 1.66666 10 1.66666C5.39763 1.66666 1.66667 5.39762 1.66667 9.99999C1.66667 14.6024 5.39763 18.3333 10 18.3333Z" stroke="black" stroke-opacity="0.7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
@@ -171,23 +183,23 @@
                 </defs>
               </svg>
             </button>
-            <input type="text" class="block__input" placeholder="Add new task">
+            <input type="text" class="block__input input button" placeholder="Add new task">
         </form>
         <ul class="block__ul">
             <li class="block__li">
                 <input type="checkbox" class="block__checkbox">
-                <span class="block__span">Work teem</span>
+                <span class="block__span text">Work teem</span>
             </li>
             <li class="block__li">
                 <input type="checkbox" class="block__checkbox">
-                <span class="block__span">Job interview</span>
+                <span class="block__span text">Job interview</span>
             </li>
         </ul>
     </div>
-    <div class="block">
-        <h1 class="block__title">This Week</h1>
+    <div class="block block-down">
+        <h1 class="block__title title font-size-xl">This Week</h1>
         <form action="" class="block__form">
-            <button class="block__button">
+            <button class="block__button button">
                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g clip-path="url(#clip0_1_64)">
                   <path d="M10 18.3333C14.6024 18.3333 18.3333 14.6024 18.3333 9.99999C18.3333 5.39762 14.6024 1.66666 10 1.66666C5.39763 1.66666 1.66667 5.39762 1.66667 9.99999C1.66667 14.6024 5.39763 18.3333 10 18.3333Z" stroke="black" stroke-opacity="0.7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
@@ -201,20 +213,20 @@
                 </defs>
               </svg>
             </button>
-            <input type="text" class="block__input" placeholder="Add new task">
+            <input type="text" class="block__input input button" placeholder="Add new task">
         </form>
         <ul class="block__ul">
             <li class="block__li">
                 <input type="checkbox" class="block__checkbox">
-                <span class="block__span">Research content ideas</span>
+                <span class="block__span text">Research content ideas</span>
             </li>
             <li class="block__li">
                 <input type="checkbox" class="block__checkbox">
-                <span class="block__span">Consult accountant</span>
+                <span class="block__span text">Consult accountant</span>
             </li>
             <li class="block__li">
                 <input type="checkbox" class="block__checkbox">
-                <span class="block__span">Print business card</span>
+                <span class="block__span text">Print business card</span>
             </li>
         </ul>
     </div>
