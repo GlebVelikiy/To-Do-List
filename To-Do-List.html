@@ -18,8 +18,8 @@
         <div class="menu__inner">
             <div class="menu-header">
                 <div class="menu-header__title title font-size-l font-weight-xl">Menu</div>
-                <div class="menu-header__button">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <div class="menu-header__button cursor-pointer">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M21 10H3" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                         <path d="M21 6H3" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                         <path d="M21 14H3" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
@@ -27,8 +27,8 @@
                       </svg>
                 </div>
             </div>
-            <form class="search">
-                <button class="search__button button">
+            <form class="search cursor-pointer">
+                <button class="search__button button cursor-pointer">
                     <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g clip-path="url(#clip0_1_12)">
                       <path d="M6.875 11.875C9.63642 11.875 11.875 9.63642 11.875 6.875C11.875 4.11358 9.63642 1.875 6.875 1.875C4.11358 1.875 1.875 4.11358 1.875 6.875C1.875 9.63642 4.11358 11.875 6.875 11.875Z" stroke="black" stroke-opacity="0.7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
@@ -40,7 +40,7 @@
                       </clipPath>
                     </defs>
                   </svg></button>
-                <input type="text" class="search__input input button" placeholder = "Search...">
+                <input type="text" class="search__input input button cursor-pointer" placeholder = "Search...">
             </form>
             <div class="checklist tasks">
                 <h1 class="checklist__title title font-size-s font-weight-xl">Tasks</h1>
@@ -81,7 +81,7 @@
                             </defs>
                           </svg>
                           <span class="checklist__span text">Calendar</span>
-                          <div class="checklist__counter"></div>
+                          
 
                     </li>
                     <li class="checklist__li">
@@ -89,7 +89,7 @@
                             <path d="M10.4464 9.64286H15V0.803571C15 0.358259 14.6417 0 14.1964 0H0.803571C0.358259 0 0 0.358259 0 0.803571V14.1964C0 14.6417 0.358259 15 0.803571 15H9.64286V10.4464C9.64286 10.0045 10.0045 9.64286 10.4464 9.64286ZM14.7656 11.4844L11.4844 14.7656C11.3337 14.9163 11.1295 15 10.9152 15H10.7143V10.7143H15V10.9185C15 11.1295 14.9163 11.3337 14.7656 11.4844Z" fill="black" fill-opacity="0.7" />
                           </svg>
                           <span class="checklist__span text">Sticky Wall</span>
-                          <div class="checklist__counter"></div>
+                          
 
                     </li>
                 </ul>
@@ -110,15 +110,15 @@
                         <span class="checklist__span text">Study</span>
                     </li>
                     <li>
-                      <form action="" class="checklist__form">
-                        <button class="checklist__button button">
+                      <form action="" class="checklist__form cursor-pointer">
+                        <button class="checklist__button button cursor-pointer">
                           <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                               <path d="M7.5 13.75C10.9518 13.75 13.75 10.9518 13.75 7.5C13.75 4.04822 10.9518 1.25 7.5 1.25C4.04822 1.25 1.25 4.04822 1.25 7.5C1.25 10.9518 4.04822 13.75 7.5 13.75Z" stroke="black" stroke-opacity="0.4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                               <path d="M7.5 5V10" stroke="black" stroke-opacity="0.4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                               <path d="M5 7.5H10" stroke="black" stroke-opacity="0.4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                           </svg>
                         </button>
-                        <input type="text" class="checklist__input input button" placeholder="Add new list">
+                        <input type="text" class="checklist__input input button cursor-pointer" placeholder="Add new list">
                       </form>
                     </li>
                 </ul>
@@ -132,10 +132,10 @@
             <div class="page-title__counter title">18</div>
         </div>
     </div>
-    <div class="block block-up">
+    <div class="block block-up block-today">
         <h1 class="block__title title font-size-xl">Today</h1>
-        <form action="" class="block__form">
-            <button class="block__button button">
+        <form action="" class="block__form cursor-pointer">
+            <button class="block__button button cursor-pointer">
                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g clip-path="url(#clip0_1_64)">
                   <path d="M10 18.3333C14.6024 18.3333 18.3333 14.6024 18.3333 9.99999C18.3333 5.39762 14.6024 1.66666 10 1.66666C5.39763 1.66666 1.66667 5.39762 1.66667 9.99999C1.66667 14.6024 5.39763 18.3333 10 18.3333Z" stroke="black" stroke-opacity="0.7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
@@ -149,7 +149,7 @@
                 </defs>
               </svg>
             </button>
-            <input type="text" class="block__input input button" placeholder="Add new task">
+            <input type="text" class="block__input input button cursor-pointer" placeholder="Add new task">
         </form>
         <ul class="block__ul">
             <li class="block__li">
@@ -166,10 +166,10 @@
             </li>
         </ul>
     </div>
-    <div class="block block-down">
+    <div class="block block-down block-tomorrow">
         <h1 class="block__title title font-size-xl">Tomorrow</h1>
-        <form action="" class="block__form">
-            <button class="block__button button">
+        <form action="" class="block__form cursor-pointer">
+            <button class="block__button button cursor-pointer">
                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g clip-path="url(#clip0_1_64)">
                   <path d="M10 18.3333C14.6024 18.3333 18.3333 14.6024 18.3333 9.99999C18.3333 5.39762 14.6024 1.66666 10 1.66666C5.39763 1.66666 1.66667 5.39762 1.66667 9.99999C1.66667 14.6024 5.39763 18.3333 10 18.3333Z" stroke="black" stroke-opacity="0.7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
@@ -183,7 +183,7 @@
                 </defs>
               </svg>
             </button>
-            <input type="text" class="block__input input button" placeholder="Add new task">
+            <input type="text" class="block__input input button cursor-pointer" placeholder="Add new task">
         </form>
         <ul class="block__ul">
             <li class="block__li">
@@ -196,10 +196,10 @@
             </li>
         </ul>
     </div>
-    <div class="block block-down">
+    <div class="block block-down block-this-week">
         <h1 class="block__title title font-size-xl">This Week</h1>
-        <form action="" class="block__form">
-            <button class="block__button button">
+        <form action="" class="block__form cursor-pointer">
+            <button class="block__button button cursor-pointer">
                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g clip-path="url(#clip0_1_64)">
                   <path d="M10 18.3333C14.6024 18.3333 18.3333 14.6024 18.3333 9.99999C18.3333 5.39762 14.6024 1.66666 10 1.66666C5.39763 1.66666 1.66667 5.39762 1.66667 9.99999C1.66667 14.6024 5.39763 18.3333 10 18.3333Z" stroke="black" stroke-opacity="0.7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
@@ -213,7 +213,7 @@
                 </defs>
               </svg>
             </button>
-            <input type="text" class="block__input input button" placeholder="Add new task">
+            <input type="text" class="block__input input button cursor-pointer" placeholder="Add new task">
         </form>
         <ul class="block__ul">
             <li class="block__li">
